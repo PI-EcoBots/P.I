@@ -1,3 +1,13 @@
+*, 
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
@@ -9,15 +19,16 @@ body {
 .navbar {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 20px;
     background: rgb(255, 255, 255);
     border-bottom: 1px solid #ddd;
-    padding-top: 3%;
     
 }
 
 .navbar a {
-    padding: 6px 12px;
+    background-color: #ffffff;
+    padding: 6px 20px;
     border-radius: 6px;
     transition: 0.3s ease;
 }
@@ -28,9 +39,10 @@ body {
 }
 
 .logo img {
-    height: 40px;
+    height: 65px;
     width: auto;
     border-radius: 50%;
+    margin-bottom: 10px;
 }
 
 
@@ -199,7 +211,7 @@ body {
 }
 
 .qs-img {
-    width: 40%;
+    width: 45%;
     height: 350px;
     background: #ccc;
     border-radius: 14px;
@@ -217,4 +229,90 @@ body {
         height: 2
         50px;
     }
+}
+
+.img-main {
+    height: 240px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.img-main-quem {
+    height: 350px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.img-contato {
+    width: 80%;
+    height: 300px;
+    border-radius: 10px;
+} 
+
+.hero-contato {
+    display: flex;
+    padding: 90px 24px;
+    height: 85vh;
+    background-color: #1f8f28;
+    
+    
+
+}
+
+.hero-contato-text {
+    width: 100%;
+    padding: 15px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 20px;
+    color: white;
+    
+}
+
+.btn-contato {
+    background: #ffcc00;
+    padding: 12px 24px;
+    border: none;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 55%;
+}
+
+.hero-img-contato {
+    width: 105%;
+    height: auto;
+    padding-left: 200px;
+}
+
+.hero-ouvidoria {
+    
+}
+
+.hero-ouvidoria-text {
+    color: white;
+    background-color: #1b1a1abe;
+    font-size: 25px;    
+    text-align: center;
+    height: 80vh;
+    letter-spacing: 5px;
+    padding-top: 45px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.btn-ouvidoria {
+    width: 200px;
+    height: 25px;
+    background: #ffffff;
+    border: none;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    
 }
