@@ -22,24 +22,41 @@
   --card-alt: #1a1a1a;
   --texto: #e4e4e4;
   --borda: #555;
-  --primario: #4caf50;
+  --primario: #1d7363;
 }
 
 /* Corpo / fundo (suporta imagem de fundo) */
 body{
   font-family: 'Poppins', sans-serif;
-  background: var(--fundo) url("img/fundo.jpg") no-repeat center center fixed;
+  background: var(--fundo) url("./img/EcoEnergiaSiteBackground.jpg") no-repeat center center fixed;
   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   color: var(--texto);
   transition: background 0.3s ease, color 0.3s ease;
   line-height: 1.6;
 }
+
 
 /* Fundo para modo escuro (se tiver imagem alternativa) */
 body.dark-mode{
   background: #000 url("img/fundo-escuro.jpg") no-repeat center center fixed;
   background-size: cover;
 }
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main, .form-container {
+    flex: 1;
+}
+
 
 /* =========================================================
    BARRA DE NAVEGAÇÃO
@@ -70,6 +87,11 @@ body.dark-mode{
   font-weight:500;
   transition: color .25s;
 }
+
+.links-navegacao .btn-auth {
+  color: #FFF;
+}
+
 
 
 .links-navegacao a:hover{ color:var(--primario); }
@@ -255,20 +277,13 @@ body.dark-mode{
 }
 
 .imagem-visao img {
-  width: auto;
-  height: auto;
+  width: 250px;
+  height: 150px;
   object-fit: cover;
   object-position: initial;
   border-radius: 10px;
 }
 
-.container-invertido img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  transform: scale();
-  flex-direction: row-reverse;
-}
 
 /* =========================================================
    VALORES / EQUIPE
@@ -494,12 +509,12 @@ form label {
 }
 
 .form-card {
-    background: #ffffff;
+    background: #00000043;
     padding: 30px;
     width: 100%;
     max-width: 420px;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.08);
+    box-shadow: 0 0 10px rgba(218, 24, 24, 0.08);
 }
 
 .form-card h2 {
@@ -608,9 +623,9 @@ form label {
 
 /*Estilo dos botoes login e register*/
 .btn-auth {
- padding: 8px 16px;
+    padding: 8px 16px;
     background-color: #1D7363; /* lilás do seu site */
-    color: #fff;
+    color: #fafafa;
     border-radius: 6px;
     text-decoration: none;
     transition: 0.3s;
