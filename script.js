@@ -13,6 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
       botao.textContent = '🌙';
     }
   };
+  
 
   // Carrega na abertura da página
   aplicarTemaSalvo();
@@ -25,6 +26,17 @@ document.addEventListener('DOMContentLoaded', () => {
     botao.textContent = estaEscuro ? '☀️' : '🌙';
   });
 });
+
+/* --- LÓGICA DO MENU MOBILE --- */
+  const menuIcon = document.getElementById('menu-icon');
+  const navLinks = document.querySelector('.links-navegacao');
+
+  if (menuIcon && navLinks) {
+    menuIcon.addEventListener('click', () => {
+      navLinks.classList.toggle('menu-aberto');
+    });
+  }
+
 
 
 /* ---------- ANIMAÇÕES AO ROLAR ---------- */
